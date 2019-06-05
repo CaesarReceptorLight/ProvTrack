@@ -1,0 +1,802 @@
+{
+	"tree": {
+		"ontologyClassType": "plan",
+		"children": [{
+			"description": "Method for transfection of cultured cells.",
+			"name": "StandardOperatingProcedure_2",
+			"link": {
+				"direction": "ASYN",
+				"name": "p-plan:isSubPlanOfPlan",
+				"nodeName": "p-plan:isSubPlanOfPlan"
+			},
+			"ontologyClassType": "plan",
+			"children": [{
+				"ontologyClassType": "step",
+				"description": "Transfected with pEGFP-RAD51 and pmCherry-RAD52 using the calcium phosphate precipitation method.  <<Sop:2:Calcium phosphate precipitation transfection method>> Cells were synchronised prior to transfection by a double thyimdine block.",
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:isStepOfPlan",
+					"nodeName": "p-plan:isStepOfPlan"
+				},
+				"nodeName": "Transfection_Experiment_3",
+				"name": "Transfection_Experiment_3"
+			}, {
+				"ontologyClassType": "step",
+				"description": "The  <<Sop:2:Calcium phosphate precipitation transfection method>> was used for transfection using 1 5g of pEGFP-RAD51. ",
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:isStepOfPlan",
+					"nodeName": "p-plan:isStepOfPlan"
+				},
+				"nodeName": "Transfection_Experiment_4",
+				"name": "Transfection_Experiment_4"
+			}, {
+				"ontologyClassType": "step",
+				"description": "The cells were transfected using the  <<Sop:2:Calcium phosphate precipitation transfection method>>",
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:isStepOfPlan",
+					"nodeName": "p-plan:isStepOfPlan"
+				},
+				"nodeName": "Transfection_Experiment_5",
+				"name": "Transfection_Experiment_5"
+			}, {
+				"ontologyClassType": "step",
+				"description": "Cells were transfected with EGFP-RAD52 and <<Plasmid:2:pCherry-RAD54>> using <<Sop:2:Calcium phosphate precipitation transfection method>> ",
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:isStepOfPlan",
+					"nodeName": "p-plan:isStepOfPlan"
+				},
+				"nodeName": "Transfection_Experiment_8",
+				"name": "Transfection_Experiment_8"
+			}],
+			"nodeName": "StandardOperatingProcedure_2"
+		}, {
+			"description": "",
+			"name": "ChemicalPreparation_Plan_2",
+			"link": {
+				"direction": "ASYN",
+				"name": "p-plan:isSubPlanOfPlan",
+				"nodeName": "p-plan:isSubPlanOfPlan"
+			},
+			"ontologyClassType": "plan",
+			"children": [{
+				"ontologyClassType": "step",
+				"description": "",
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:isStepOfPlan",
+					"nodeName": "p-plan:isStepOfPlan"
+				},
+				"nodeName": "Verification_Chemical_2",
+				"name": "Verification_Chemical_2"
+			}],
+			"nodeName": "ChemicalPreparation_Plan_2"
+		}, {
+			"description": "Image acquision in a time series without autofocus. Leica LAS X sequence option was used for that. The sequence was repeated / an image was taken every 10 minutes for 4 hours (25 f\r\nrames). Each frame was averaged two times and the image speed was set to 400.",
+			"name": "ExperimentEnvironmentSetup_Experiment_4",
+			"link": {
+				"direction": "ASYN",
+				"name": "p-plan:isSubPlanOfPlan",
+				"nodeName": "p-plan:isSubPlanOfPlan"
+			},
+			"ontologyClassType": "plan",
+			"children": [{
+				"ontologyClassType": "step",
+				"description": "Leica TCS SP8 using an argon laser source at 488 nm. Detection with PMT from 500 to 550 nm.",
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:isStepOfPlan",
+					"nodeName": "p-plan:isStepOfPlan"
+				},
+				"nodeName": "MicroscopeConfiguration_Experiment_4",
+				"name": "MicroscopeConfiguration_Experiment_4"
+			}],
+			"nodeName": "ExperimentEnvironmentSetup_Experiment_4"
+		}, {
+			"ontologyClassType": "step",
+			"description": "",
+			"link": {
+				"direction": "ASYN",
+				"name": "p-plan:isStepOfPlan",
+				"nodeName": "p-plan:isStepOfPlan"
+			},
+			"nodeName": "BathSolutionPreparation_Experiment_4",
+			"name": "BathSolutionPreparation_Experiment_4"
+		}, {
+			"ontologyClassType": "step",
+			"description": "",
+			"link": {
+				"direction": "ASYN",
+				"name": "p-plan:isStepOfPlan",
+				"nodeName": "p-plan:isStepOfPlan"
+			},
+			"nodeName": "PipetteSolutionPreparation_Experiment_4",
+			"name": "PipetteSolutionPreparation_Experiment_4"
+		}, {
+			"ontologyClassType": "step",
+			"description": "The  <<Sop:2:Calcium phosphate precipitation transfection method>> was used for transfection using 1 b5g of pEGFP-RAD51. ",
+			"link": {
+				"direction": "ASYN",
+				"name": "p-plan:isStepOfPlan",
+				"nodeName": "p-plan:isStepOfPlan"
+			},
+			"nodeName": "Transfection_Experiment_4",
+			"name": "Transfection_Experiment_4"
+		}, {
+			"description": "U2OS were seeded out in 6-cm petri dishes four days prior to the experiment in a density of 5 x 10\u2075. They were transfected one day after that. Then, a double thymidine block was performed to synchronise the cells. For that purpose, 25 5l/ml of a 0.1 M  <<ChemicalSubstance:2:2'-Desoxythimidine>> solution was added to the cells one day after transfection (at 16:00) and incubated for 16h. After that, cells were washed (8:00 the following day) three times using pre-warmed PBS and allowed to incubate in fresh DMEM + FCS for 8h. Again, 25 5l/ml 0.1 M was added (at 16:00) and the cells incubated for 16 h. Now, on the day of the experiment, cells were washes with warm PBS and supplied with 5ml HEPES-buffered DMEM and incubated for four hours until the experiment.",
+			"name": "SpecimenPreparation_Experiment_4",
+			"link": {
+				"direction": "ASYN",
+				"name": "p-plan:isStepOfPlan",
+				"nodeName": "p-plan:isStepOfPlan"
+			},
+			"ontologyClassType": "step",
+			"children": [{
+				"ontologyClassType": "variable",
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:hasInputVar",
+					"nodeName": "p-plan:hasInputVar"
+				},
+				"nodeName": "SpecimenType_Experiment_4",
+				"name": "SpecimenType_Experiment_4"
+			}],
+			"nodeName": "SpecimenPreparation_Experiment_4"
+		}, {
+			"ontologyClassType": "step",
+			"description": "",
+			"link": {
+				"direction": "ASYN",
+				"name": "p-plan:isStepOfPlan",
+				"nodeName": "p-plan:isStepOfPlan"
+			},
+			"nodeName": "Incubation_Experiment_4",
+			"name": "Incubation_Experiment_4"
+		}, {
+			"ontologyClassType": "step",
+			"description": "",
+			"link": {
+				"direction": "ASYN",
+				"name": "p-plan:isStepOfPlan",
+				"nodeName": "p-plan:isStepOfPlan"
+			},
+			"nodeName": "Fixation_Experiment_4",
+			"name": "Fixation_Experiment_4"
+		}, {
+			"ontologyClassType": "step",
+			"description": "",
+			"link": {
+				"direction": "ASYN",
+				"name": "p-plan:isStepOfPlan",
+				"nodeName": "p-plan:isStepOfPlan"
+			},
+			"nodeName": "RNAInjection_Experiment_4",
+			"name": "RNAInjection_Experiment_4"
+		}, {
+			"ontologyClassType": "variable",
+			"link": {
+				"direction": "ASYN",
+				"name": "p-plan:correspondsToVariable",
+				"nodeName": "p-plan:correspondsToVariable"
+			},
+			"nodeName": "Chemical_2",
+			"name": "Chemical_2"
+		}, {
+
+			"nodeName": "DampedOscillationsPlot",
+			"children": [{
+				"nodeName": "Cell0",
+				"children": [{
+					"nodeName": "Cell0Execution1",
+					"children": [{
+						"nodeName": "Cell0Execution1Source",
+						"value": ["%matplotlib inline\nimport matplotlib.pyplot as plt\nimport numpy as np"],
+						"link": {
+							"direction": "ASYN",
+							"name": "prov:used",
+							"nodeName": "prov:used"
+						},
+						"ontologyClassType": "entity",
+						"name": "Cell0Execution1Source"
+					}],
+					"link": {
+						"direction": "ASYN",
+						"name": "p-plan:correspondsToStep",
+						"nodeName": "p-plan:correspondsToStep"
+					},
+					"ontologyClassType": "activity",
+					"name": "Cell0Execution1"
+				}, {
+					"nodeName": "Cell0Execution0",
+					"children": [{
+						"nodeName": "Cell0Execution0Source",
+						"value": ["%matplotlib inline\nimport matplotlib.pyplot as plt\nimport numpy as np"],
+						"link": {
+							"direction": "ASYN",
+							"name": "prov:used",
+							"nodeName": "prov:used"
+						},
+						"ontologyClassType": "entity",
+						"name": "Cell0Execution0Source"
+					}],
+					"link": {
+						"direction": "ASYN",
+						"name": "p-plan:correspondsToStep",
+						"nodeName": "p-plan:correspondsToStep"
+					},
+					"ontologyClassType": "activity",
+					"name": "Cell0Execution0"
+				}, {
+					"nodeName": "Source0",
+					"value": "%matplotlib inline\nimport matplotlib.pyplot as plt\nimport numpy as np",
+					"link": {
+						"direction": "ASYN",
+						"name": "p-plan:hasInputVar",
+						"nodeName": "p-plan:hasInputVar"
+					},
+					"ontologyClassType": "variable",
+					"name": "Source0"
+				}],
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:isStepOfPlan",
+					"nodeName": "p-plan:isStepOfPlan"
+				},
+				"ontologyClassType": "step",
+				"name": "Cell0"
+			}, {
+				"nodeName": "Cell1",
+				"children": [{
+					"nodeName": "Cell1Execution1",
+					"children": [{
+						"nodeName": "Cell1Execution1Source",
+						"value": ["x1 = np.linspace(0.0, 4.0)\ny1 = np.cos(4 * np.pi * x1) * np.exp(-x1)\nplt.subplot(2, 1, 1)\nplt.plot(x1, y1, 'o-')\nplt.ylabel('Damped oscillation')\nplt.show()"],
+						"link": {
+							"direction": "ASYN",
+							"name": "prov:used",
+							"nodeName": "prov:used"
+						},
+						"ontologyClassType": "entity",
+						"name": "Cell1Execution1Source"
+					}, {
+						"nodeName": "Cell1Execution1Suboutput0",
+						"value": ["2"],
+						"link": {
+							"direction": "ASYN",
+							"name": "prov:generated",
+							"nodeName": "prov:generated"
+						},
+						"ontologyClassType": "variable",
+						"name": "Cell1Execution1Suboutput0"
+					}, {
+						"nodeName": "Cell1Execution1Suboutput1",
+						"value": ["<Figure size 432x288 with 1 Axes>"],
+						"link": {
+							"direction": "ASYN",
+							"name": "prov:generated",
+							"nodeName": "prov:generated"
+						},
+						"ontologyClassType": "variable",
+						"name": "Cell1Execution1Suboutput1"
+					}],
+					"link": {
+						"direction": "ASYN",
+						"name": "p-plan:correspondsToStep",
+						"nodeName": "p-plan:correspondsToStep"
+					},
+					"ontologyClassType": "activity",
+					"name": "Cell1Execution1"
+				}, {
+					"nodeName": "Cell1Execution0",
+					"children": [{
+						"nodeName": "Cell1Execution0Source",
+						"value": ["x1 = np.linspace(0.0, 5.0)\ny1 = np.cos(4 * np.pi * x1) * np.exp(-x1)\nplt.subplot(2, 1, 1)\nplt.plot(x1, y1, 'o-')\nplt.ylabel('Damped oscillation')\nplt.show()"],
+						"link": {
+							"direction": "ASYN",
+							"name": "prov:used",
+							"nodeName": "prov:used"
+						},
+						"ontologyClassType": "entity",
+						"name": "Cell1Execution0Source"
+					}, {
+						"nodeName": "Cell1Execution0Suboutput0",
+						"value": ["1"],
+						"link": {
+							"direction": "ASYN",
+							"name": "prov:generated",
+							"nodeName": "prov:generated"
+						},
+						"ontologyClassType": "variable",
+						"name": "Cell1Execution0Suboutput0"
+					}, {
+						"nodeName": "Cell1Execution0Suboutput1",
+						"value": ["<matplotlib.figure.Figure at 0x7f349429c290>"],
+						"link": {
+							"direction": "ASYN",
+							"name": "prov:generated",
+							"nodeName": "prov:generated"
+						},
+						"ontologyClassType": "variable",
+						"name": "Cell1Execution0Suboutput1"
+					}],
+					"link": {
+						"direction": "ASYN",
+						"name": "p-plan:correspondsToStep",
+						"nodeName": "p-plan:correspondsToStep"
+					},
+					"ontologyClassType": "activity",
+					"name": "Cell1Execution0"
+				}, {
+					"nodeName": "Source1",
+					"value": "x1 = np.linspace(0.0, 4.0)\ny1 = np.cos(4 * np.pi * x1) * np.exp(-x1)\nplt.subplot(2, 1, 1)\nplt.plot(x1, y1, 'o-')\nplt.ylabel('Damped oscillation')\nplt.show()",
+					"link": {
+						"direction": "ASYN",
+						"name": "p-plan:hasInputVar",
+						"nodeName": "p-plan:hasInputVar"
+					},
+					"ontologyClassType": "variable",
+					"name": "Source1"
+				}, {
+					"nodeName": "Output1Suboutput1",
+					"value": ["<Figure size 432x288 with 1 Axes>"],
+					"link": {
+						"direction": "ASYN",
+						"name": "p-plan:hasOutputVar",
+						"nodeName": "p-plan:hasOutputVar"
+					},
+					"ontologyClassType": "variable",
+					"name": "Output1Suboutput1"
+				}, {
+					"nodeName": "Output1Suboutput0",
+					"value": ["5"],
+					"link": {
+						"direction": "ASYN",
+						"name": "p-plan:hasOutputVar",
+						"nodeName": "p-plan:hasOutputVar"
+					},
+					"ontologyClassType": "variable",
+					"name": "Output1Suboutput0"
+				}],
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:isStepOfPlan",
+					"nodeName": "p-plan:isStepOfPlan"
+				},
+				"ontologyClassType": "step",
+				"name": "Cell1"
+			}, {
+				"nodeName": "Cell2",
+				"children": [{
+					"nodeName": "Cell2Execution1",
+					"children": [{
+						"nodeName": "Cell2Execution1Source",
+						"value": ["x2 = np.linspace(0.0, 3.0)\ny2 = np.cos(2 * np.pi * x2)"],
+						"link": {
+							"direction": "ASYN",
+							"name": "prov:used",
+							"nodeName": "prov:used"
+						},
+						"ontologyClassType": "entity",
+						"name": "Cell2Execution1Source"
+					}],
+					"link": {
+						"direction": "ASYN",
+						"name": "p-plan:correspondsToStep",
+						"nodeName": "p-plan:correspondsToStep"
+					},
+					"ontologyClassType": "activity",
+					"name": "Cell2Execution1"
+				}, {
+					"nodeName": "Cell2Execution0",
+					"children": [{
+						"nodeName": "Cell2Execution0Source",
+						"value": ["x2 = np.linspace(0.0, 2.0)\ny2 = np.cos(2 * np.pi * x2)"],
+						"link": {
+							"direction": "ASYN",
+							"name": "prov:used",
+							"nodeName": "prov:used"
+						},
+						"ontologyClassType": "entity",
+						"name": "Cell2Execution0Source"
+					}],
+					"link": {
+						"direction": "ASYN",
+						"name": "p-plan:correspondsToStep",
+						"nodeName": "p-plan:correspondsToStep"
+					},
+					"ontologyClassType": "activity",
+					"name": "Cell2Execution0"
+				}, {
+					"nodeName": "Source2",
+					"value": "x2 = np.linspace(0.0, 3.0)\ny2 = np.cos(2 * np.pi * x2)",
+					"link": {
+						"direction": "ASYN",
+						"name": "p-plan:hasInputVar",
+						"nodeName": "p-plan:hasInputVar"
+					},
+					"ontologyClassType": "variable",
+					"name": "Source2"
+				}],
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:isStepOfPlan",
+					"nodeName": "p-plan:isStepOfPlan"
+				},
+				"ontologyClassType": "step",
+				"name": "Cell2"
+			}, {
+				"nodeName": "Cell3",
+				"children": [{
+					"nodeName": "Cell3Execution1",
+					"children": [{
+						"nodeName": "Cell3Execution1Source",
+						"value": ["plt.subplot(3, 1, 2)\nplt.plot(x2, y2, '.-')\nplt.xlabel('time (s)')\nplt.ylabel('Undamped')\nplt.show()"],
+						"link": {
+							"direction": "ASYN",
+							"name": "prov:used",
+							"nodeName": "prov:used"
+						},
+						"ontologyClassType": "entity",
+						"name": "Cell3Execution1Source"
+					}, {
+						"nodeName": "Cell3Execution1Suboutput1",
+						"value": ["<Figure size 432x288 with 1 Axes>"],
+						"link": {
+							"direction": "ASYN",
+							"name": "prov:generated",
+							"nodeName": "prov:generated"
+						},
+						"ontologyClassType": "variable",
+						"name": "Cell3Execution1Suboutput1"
+					}, {
+						"nodeName": "Cell3Execution1Suboutput0",
+						"value": ["4"],
+						"link": {
+							"direction": "ASYN",
+							"name": "prov:generated",
+							"nodeName": "prov:generated"
+						},
+						"ontologyClassType": "variable",
+						"name": "Cell3Execution1Suboutput0"
+					}],
+					"link": {
+						"direction": "ASYN",
+						"name": "p-plan:correspondsToStep",
+						"nodeName": "p-plan:correspondsToStep"
+					},
+					"ontologyClassType": "activity",
+					"name": "Cell3Execution1"
+				}, {
+					"nodeName": "Cell3Execution0",
+					"children": [{
+						"nodeName": "Cell3Execution0Source",
+						"value": ["plt.subplot(3, 1, 2)\nplt.plot(x2, y2, '.-')\nplt.xlabel('time (s)')\nplt.ylabel('Undamped')\nplt.show()"],
+						"link": {
+							"direction": "ASYN",
+							"name": "prov:used",
+							"nodeName": "prov:used"
+						},
+						"ontologyClassType": "entity",
+						"name": "Cell3Execution0Source"
+					}, {
+						"nodeName": "Cell3Execution0Suboutput1",
+						"value": ["<matplotlib.figure.Figure at 0x7f34942a7310>"],
+						"link": {
+							"direction": "ASYN",
+							"name": "prov:generated",
+							"nodeName": "prov:generated"
+						},
+						"ontologyClassType": "variable",
+						"name": "Cell3Execution0Suboutput1"
+					}, {
+						"nodeName": "Cell3Execution0Suboutput0",
+						"value": ["3"],
+						"link": {
+							"direction": "ASYN",
+							"name": "prov:generated",
+							"nodeName": "prov:generated"
+						},
+						"ontologyClassType": "variable",
+						"name": "Cell3Execution0Suboutput0"
+					}],
+					"link": {
+						"direction": "ASYN",
+						"name": "p-plan:correspondsToStep",
+						"nodeName": "p-plan:correspondsToStep"
+					},
+					"ontologyClassType": "activity",
+					"name": "Cell3Execution0"
+				}, {
+					"nodeName": "Source3",
+					"value": "plt.subplot(3, 1, 2)\nplt.plot(x2, y2, '.-')\nplt.xlabel('time (s)')\nplt.ylabel('Undamped')\nplt.show()",
+					"link": {
+						"direction": "ASYN",
+						"name": "p-plan:hasInputVar",
+						"nodeName": "p-plan:hasInputVar"
+					},
+					"ontologyClassType": "variable",
+					"name": "Source3"
+				}, {
+					"nodeName": "Output3Suboutput0",
+					"value": ["6"],
+					"link": {
+						"direction": "ASYN",
+						"name": "p-plan:hasOutputVar",
+						"nodeName": "p-plan:hasOutputVar"
+					},
+					"ontologyClassType": "variable",
+					"name": "Output3Suboutput0"
+				}, {
+					"nodeName": "Output3Suboutput1",
+					"value": ["<Figure size 432x288 with 1 Axes>"],
+					"link": {
+						"direction": "ASYN",
+						"name": "p-plan:hasOutputVar",
+						"nodeName": "p-plan:hasOutputVar"
+					},
+					"ontologyClassType": "variable",
+					"name": "Output3Suboutput1"
+				}],
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:isStepOfPlan",
+					"nodeName": "p-plan:isStepOfPlan"
+				},
+				"ontologyClassType": "step",
+				"name": "Cell3"
+			}, {
+				"nodeName": "Cell4",
+				"children": [{
+					"link": {
+						"direction": "ASYN",
+						"name": "p-plan:correspondsToStep",
+						"nodeName": "p-plan:correspondsToStep"
+					},
+					"ontologyClassType": "activity",
+					"nodeName": "Cell4Execution0",
+					"name": "Cell4Execution0"
+				}],
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:isStepOfPlan",
+					"nodeName": "p-plan:isStepOfPlan"
+				},
+				"ontologyClassType": "step",
+				"name": "Cell4"
+			}, {
+				"nodeName": "Cell5",
+				"children": [{
+					"link": {
+						"direction": "ASYN",
+						"name": "p-plan:correspondsToStep",
+						"nodeName": "p-plan:correspondsToStep"
+					},
+					"ontologyClassType": "activity",
+					"nodeName": "Cell5Execution0",
+					"name": "Cell5Execution0"
+				}],
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:isStepOfPlan",
+					"nodeName": "p-plan:isStepOfPlan"
+				},
+				"ontologyClassType": "step",
+				"name": "Cell5"
+			}],
+			"link": {
+				"direction": "ASYN",
+				"name": "p-plan:isSubPlanOfPlan",
+				"nodeName": "p-plan:isSubPlanOfPlan"
+			},
+			"ontologyClassType": "plan",
+			"name": "DampedOscillationsPlot"
+		}, {
+			"description": "U2OS; EGFP-RAD51 Trafo 68h, S-Phase DTB; Bleomycin  Start Bild 1",
+			"name": "20180817_RAD51-EGFP_BLM_4h_10min.lif",
+			"isAvailableAt": "https://sl-omero-test.med.uni-jena.de/webclient/img_detail/51",
+			"link": {
+				"direction": "ASYN",
+				"name": "p-plan:correspondsToVariable",
+				"nodeName": "p-plan:correspondsToVariable"
+			},
+			"ontologyClassType": "variable",
+			"children": [{
+				"ontologyClassType": "entity",
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:correspondsToVariable",
+					"nodeName": "p-plan:correspondsToVariable"
+				},
+				"nodeName": "objective_1",
+				"value": "objective_1",
+				"name": "objective_1"
+			}, {
+				"ontologyClassType": "entity",
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:correspondsToVariable",
+					"nodeName": "p-plan:correspondsToVariable"
+				},
+				"nodeName": "filter_11",
+				"value": "filter_11",
+				"name": "filter_11"
+			}, {
+				"ontologyClassType": "entity",
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:correspondsToVariable",
+					"nodeName": "p-plan:correspondsToVariable"
+				},
+				"nodeName": "filter_10",
+				"value": "filter_10",
+				"name": "filter_10"
+			}, {
+				"ontologyClassType": "entity",
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:correspondsToVariable",
+					"nodeName": "p-plan:correspondsToVariable"
+				},
+				"nodeName": "filter_9",
+				"value": "filter_9",
+				"name": "filter_9"
+			}, {
+				"ontologyClassType": "entity",
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:correspondsToVariable",
+					"nodeName": "p-plan:correspondsToVariable"
+				},
+				"nodeName": "filter_8",
+				"value": "filter_8",
+				"name": "filter_8"
+			}, {
+				"ontologyClassType": "entity",
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:correspondsToVariable",
+					"nodeName": "p-plan:correspondsToVariable"
+				},
+				"nodeName": "filter_7",
+				"value": "filter_7",
+				"name": "filter_7"
+			}, {
+				"ontologyClassType": "entity",
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:correspondsToVariable",
+					"nodeName": "p-plan:correspondsToVariable"
+				},
+				"nodeName": "filter_6",
+				"value": "filter_6",
+				"name": "filter_6"
+			}, {
+				"ontologyClassType": "entity",
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:correspondsToVariable",
+					"nodeName": "p-plan:correspondsToVariable"
+				},
+				"nodeName": "filter_5",
+				"value": "filter_5",
+				"name": "filter_5"
+			}, {
+				"ontologyClassType": "entity",
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:correspondsToVariable",
+					"nodeName": "p-plan:correspondsToVariable"
+				},
+				"nodeName": "filter_4",
+				"value": "filter_4",
+				"name": "filter_4"
+			}, {
+				"ontologyClassType": "entity",
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:correspondsToVariable",
+					"nodeName": "p-plan:correspondsToVariable"
+				},
+				"nodeName": "filter_3",
+				"value": "filter_3",
+				"name": "filter_3"
+			}, {
+				"ontologyClassType": "entity",
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:correspondsToVariable",
+					"nodeName": "p-plan:correspondsToVariable"
+				},
+				"nodeName": "filter_2",
+				"value": "filter_2",
+				"name": "filter_2"
+			}, {
+				"ontologyClassType": "entity",
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:correspondsToVariable",
+					"nodeName": "p-plan:correspondsToVariable"
+				},
+				"nodeName": "filter_1",
+				"value": "filter_1",
+				"name": "filter_1"
+			}, {
+				"ontologyClassType": "entity",
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:correspondsToVariable",
+					"nodeName": "p-plan:correspondsToVariable"
+				},
+				"nodeName": "lightsource_6",
+				"value": "lightsource_6",
+				"name": "lightsource_6"
+			}, {
+				"ontologyClassType": "entity",
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:correspondsToVariable",
+					"nodeName": "p-plan:correspondsToVariable"
+				},
+				"nodeName": "lightsource_5",
+				"value": "lightsource_5",
+				"name": "lightsource_5"
+			}, {
+				"ontologyClassType": "entity",
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:correspondsToVariable",
+					"nodeName": "p-plan:correspondsToVariable"
+				},
+				"nodeName": "lightsource_4",
+				"value": "lightsource_4",
+				"name": "lightsource_4"
+			}, {
+				"ontologyClassType": "entity",
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:correspondsToVariable",
+					"nodeName": "p-plan:correspondsToVariable"
+				},
+				"nodeName": "lightsource_3",
+				"value": "lightsource_3",
+				"name": "lightsource_3"
+			}, {
+				"ontologyClassType": "entity",
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:correspondsToVariable",
+					"nodeName": "p-plan:correspondsToVariable"
+				},
+				"nodeName": "lightsource_2",
+				"value": "lightsource_2",
+				"name": "lightsource_2"
+			}, {
+				"ontologyClassType": "entity",
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:correspondsToVariable",
+					"nodeName": "p-plan:correspondsToVariable"
+				},
+				"nodeName": "lightsource_1",
+				"value": "lightsource_1",
+				"name": "lightsource_1"
+			}, {
+				"ontologyClassType": "entity",
+				"link": {
+					"direction": "ASYN",
+					"name": "p-plan:correspondsToVariable",
+					"nodeName": "p-plan:correspondsToVariable"
+				},
+				"nodeName": "microscope_1",
+				"value": "microscope_1",
+				"name": "microscope_1"
+			}],
+			"nodeName": "image_51"
+		}],
+		"nodeName": "Experiment_4",
+		"value": "Experiment_4",
+		"name": "EGFP-RAD51 Time-lapse with Bleomycin"
+	}
+}

@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ProvTrack: Tracking Provenance of Scientific Experiments</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="/static/ProvTrack/css/provtrack.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/select2/3.5.0/select2.min.css">
+
+    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="https://d3js.org/d3.v3.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/select2/3.5.0/select2.min.js"></script>
+
+    <script type="text/javascript">DJANGO_STATIC_URL = '{{ STATIC_URL }}';</script>
+    <script src="{% static 'ProvTrack/js/provtrack.js' %}"></script>
+
+  </head>
+  <body>
+        <script>
+            function selectExperiment() {
+                var val = $('#experiment_list').val();
+                var read_json_file;
+                if (val == -1) {
+                    read_json_file = '/static/ProvTrack/data/experiment_rdf2json.json'
+                } if (val == 2) {
+                    read_json_file = 'idr0038_rdf2json.json'
+                } if (val == 3) {
+                    read_json_file = 'idr0032_rdf2json.json'
+                }
+                $('#tree-container').empty();
+                $('#infobox').empty();
+                var parameters = {
+                    'id' : val
+                };
+                $(".experimentspin.spinning-loader").show();
+                $.getJSON("/ProvTrack/get_provenance_json/", parameters)
+                .done(function(data) {
+                    ProvTrackGraph('', data.response.tree);
+                })
+                .fail(function(jqXHR, textStatus, err) {
+                    $('#tree-container').text('An error occured in loading the Experiment.');
+                    console.log( "error", textStatus );
+                })
+                .always(function() {
+                    $(".experimentspin.spinning-loader").hide();
+                });
+
+            }
+        </script>
+
+        <div class="header blue"><h3>ProvTrack: Tracking Provenance of Scientific Experiments</h3></div>
+        <div>
+            <div id="searchPath"></div>
+            <div class="mid_font">Select an Experiment to track its provenance.
+
+                <form action="javascript:selectExperiment(this)">
+                    <select name="experiment_list" id="experiment_list">
+                        <option value="-1">EGFP-RAD51</option>
+                        {% for id, data in all_experiments.items %}
+                            <option value={{id}}>{{data}}</option>
+                        {% endfor %}
+                    </select>
+                    <button type=submit>Select</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div id="provtrack-container">
+            <div id="infoboxContainer">
+                <div class="infoboxspin spinning-loader" style="display:none;"></div>
+                <div id="infobox"></div>
+            </div>
+            <div class="container">
+                <div class="experimentspin spinning-loader" style="display:none;"></div>
+                <ct-visualization id="tree-container">
+                </ct-visualization>
+            </div>
+
+        </div>
+
+
+</body>
+</html>

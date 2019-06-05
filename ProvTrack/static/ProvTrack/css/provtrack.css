@@ -1,0 +1,225 @@
+ /*
+ * CSS adapted from d3js-tree-boxes (MIT License)
+ */
+
+#provtrack-container {
+	width: 100%;
+}
+
+#tree-container {
+	position: absolute;
+	left: 27%;
+	overflow-x: auto;
+	width: 70%;
+	height: 80%;
+	border: solid 1px #9E9E9E;
+}
+
+.svgContainer {
+	/* display: block;
+	margin: auto; */
+	/* overflow: auto; */
+	text-align: center;
+	padding-left: 5px;
+}
+
+.node {
+	cursor: pointer;
+}
+
+.node-rect {
+}
+
+.node-rect-closed {
+	stroke-width: 2px;
+	stroke: rgb(0,0,0);
+}
+
+.link {
+	fill: none;
+	stroke: #64B5F6;
+	stroke-width: 2px;
+}
+
+.linkselected {
+	fill: none;
+	stroke: #E53935;
+	stroke-width: 2px;
+}
+
+.arrow {
+	fill: lightsteelblue;
+	stroke-width: 1px;
+}
+
+.arrowselected {
+	fill: #E53935;
+	stroke-width: 2px;
+}
+
+.link text {
+	font: 7px sans-serif;
+	fill: #E53935;
+}
+
+.wordwrap {
+	white-space: pre-wrap; /* CSS3 */
+	white-space: -moz-pre-wrap; /* Firefox */
+	white-space: -pre-wrap; /* Opera <7 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	word-wrap: break-word; /* IE */
+}
+
+.node-text {
+	font: 7px sans-serif;
+	color: #FFFFFF;
+}
+
+.tooltip-text-container {
+    height: 100%;
+	width: 100%;
+}
+
+.tooltip-text {
+	visibility: hidden;
+	font: 6px sans-serif;
+	color: #FFFFFF;
+	/* display: block; */
+	padding: 5px;
+	white-space: pre;
+}
+
+.tooltip-box {
+	background: rgba(0, 0, 0, 0.7);
+	visibility: hidden;
+	position: absolute;
+	stroke: #9E9E9E;
+	border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+	border-top-right-radius: 0.5em;
+	width: 150px;
+}
+
+p {
+	display: inline;
+}
+
+#infoboxContainer {
+	float: left;
+	width: 25%;
+	/* max-height: 90%; */
+	position: fixed;
+	/* display: table; */
+	border: solid 1px #9E9E9E;
+	height: 80%;
+	white-space: nowrap;
+	overflow-y: auto;
+}
+#infoboxTable {
+	width: 100%;
+	display: table-row;
+	border: solid;
+}
+
+#infoboxTable td {
+	font-size: 50%;
+	white-space: pre-line;
+}
+
+.blue {
+	color: #1B80CF;
+}
+
+.small_header {
+	color: #1B80CF;
+	font-weight: bold;
+	padding-top: 20px;
+}
+
+.mid_font {
+	font-size: 1.25vmax;
+}
+
+.small_font {
+	font-size: 50%;
+}
+
+.search {
+	float: right;
+	width: 50%;
+}
+
+.found {
+	fill:#E53935;
+	stroke: #E53935;
+}
+
+.dropbtn {
+    background-color: #FFFFFF;
+    border: none;
+}
+
+.dropdown {
+    position: fixed;
+	display: inline-block;
+	/* visibility: hidden; */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content div {
+    padding: 5px 7px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #616161;}
+
+#expand {
+    position: fixed;
+	display: inline-block;
+	margin-left: 40px;
+}
+
+#collapse {
+    position: fixed;
+	display: inline-block;
+	margin-left: 80px;
+}
+
+.toolbar_button {
+	background: #FFFFFF;
+	border: solid 0px #FFFFFF;
+
+}
+
+.spinning-loader {
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(/static/ProvTrack/img/ajax-loader.gif) center no-repeat;
+}
+
+#infoboxContainer.infoboxspin {
+	position: fixed;
+	left: 1%;
+	top: 2%;
+}
+
+.experimentspin {
+	position: fixed;
+	left: 10%;
+	top: 5%;
+}
